@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instruções para Edição - Nerd Digno</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .instrucoes {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .instrucoes h3 {
+            color: #1a1a2e;
+            border-bottom: 2px solid #e94560;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .instrucoes ul {
+            margin-left: 20px;
+        }
+        
+        .instrucoes li {
+            margin-bottom: 10px;
+        }
+        
+        .codigo {
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: monospace;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho do site -->
+    <header>
+        <div class="container">
+            <h1>Nerd Digno</h1>
+            <!-- Menu de navegação -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="animes.html">Animes</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="filmes.html">Filmes</a></li>
+                    <li><a href="mangas.html">Mangas</a></li>
+                    <li><a href="livros.html">Livros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <div class="container">
+            <h1>Instruções para Edição do Site</h1>
+            
+            <div class="instrucoes">
+                <h3>Estrutura de Arquivos</h3>
+                <p>O site Nerd Digno foi criado com uma estrutura simples para facilitar a edição:</p>
+                <ul>
+                    <li><strong>index.html</strong> - Página inicial do site</li>
+                    <li><strong>animes.html, games.html, etc.</strong> - Páginas de categorias</li>
+                    <li><strong>post-anime1.html, post-game1.html, etc.</strong> - Páginas de posts individuais</li>
+                    <li><strong>css/style.css</strong> - Arquivo de estilos do site</li>
+                    <li><strong>js/script.js</strong> - Arquivo JavaScript com funcionalidades básicas</li>
+                    <li><strong>images/</strong> - Pasta para armazenar as imagens do site</li>
+                </ul>
+            </div>
+            
+            <div class="instrucoes">
+                <h3>Como Editar o Conteúdo</h3>
+                <p>Para editar o conteúdo do site, siga estas instruções:</p>
+                <ol>
+                    <li>Abra os arquivos HTML em qualquer editor de texto (Notepad, VS Code, Sublime Text, etc.)</li>
+                    <li>Localize as seções que deseja modificar, como títulos, textos ou links</li>
+                    <li>Faça as alterações desejadas, mantendo a estrutura HTML</li>
+                    <li>Salve o arquivo e atualize o navegador para ver as mudanças</li>
+                </ol>
+                <p>Exemplo de edição de um título:</p>
+                <div class="codigo">
+                    &lt;h3&gt;Demon Slayer: Nova Temporada&lt;/h3&gt;
+                    <!-- Altere para: -->
+                    &lt;h3&gt;Demon Slayer: Análise da Temporada 4&lt;/h3&gt;
+                </div>
+            </div>
+            
+            <div class="instrucoes">
+                <h3>Como Adicionar Imagens</h3>
+                <p>Para adicionar suas próprias imagens:</p>
+                <ol>
+                    <li>Coloque as imagens na pasta <strong>images/</strong></li>
+                    <li>Nos arquivos HTML, atualize os caminhos das imagens</li>
+                </ol>
+                <p>Exemplo:</p>
+                <div class="codigo">
+                    &lt;img src="images/anime1.jpg" alt="Demon Slayer"&gt;
+                    <!-- Altere para sua imagem: -->
+                    &lt;img src="images/minha-imagem.jpg" alt="Minha Descrição"&gt;
+                </div>
+            </div>
+            
+            <div class="instrucoes">
+                <h3>Como Adicionar Novos Posts</h3>
+                <p>Para adicionar um novo post:</p>
+                <ol>
+                    <li>Duplique um arquivo de post existente (ex: post-anime1.html)</li>
+                    <li>Renomeie o arquivo (ex: post-anime7.html)</li>
+                    <li>Edite o conteúdo conforme necessário</li>
+                    <li>Adicione um link para o novo post na página da categoria correspondente</li>
+                </ol>
+            </div>
+            
+            <div class="instrucoes">
+                <h3>Como Modificar o Estilo</h3>
+                <p>Para alterar cores, fontes e outros estilos:</p>
+                <ol>
+                    <li>Abra o arquivo <strong>css/style.css</strong></li>
+                    <li>Localize as propriedades que deseja modificar</li>
+                    <li>Altere os valores conforme desejado</li>
+                </ol>
+                <p>Exemplo para mudar a cor do cabeçalho:</p>
+                <div class="codigo">
+                    header {
+                        background-color: #1a1a2e; /* Cor atual */
+                        color: white;
+                    }
+                    
+                    /* Altere para: */
+                    header {
+                        background-color: #2a2a8e; /* Nova cor */
+                        color: white;
+                    }
+                </div>
+            </div>
+            
+            <div class="instrucoes">
+                <h3>Visualização Local</h3>
+                <p>Para visualizar o site localmente:</p>
+                <ol>
+                    <li>Abra o arquivo <strong>index.html</strong> em qualquer navegador moderno</li>
+                    <li>Navegue pelo site usando os links do menu e os botões "Ver mais..."</li>
+                    <li>Após fazer alterações, salve os arquivos e atualize a página no navegador</li>
+                </ol>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé do site -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Nerd Digno - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
