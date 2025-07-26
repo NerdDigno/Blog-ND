@@ -310,5 +310,40 @@ footer {
     cursor: pointer;
 }
 
+/* Galeria de imagens e vídeos do post */
+
+.videos-relacionados {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.video-embed iframe {
+    max-width: 100%;
+    width: 460px;
+    height: 215px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.galeria-imagens img {
+    width: 350px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.galeria-imagens img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+
+
+
+
 
 
