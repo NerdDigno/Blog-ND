@@ -310,7 +310,48 @@ footer {
     cursor: pointer;
 }
 
-
+/* Dropdown de idioma no header */
+.language-dropdown {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-family: 'Roboto', sans-serif;
+    z-index: 1000;
+}
+.language-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    text-decoration: none;
+}
+.language-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+.language-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+}
+.language-menu a:hover {
+    background-color: #333;
+}
+.language-dropdown:hover .language-menu {
+    display: block;
+}
+header .container {
+    position: relative;
+}
 
 
 
