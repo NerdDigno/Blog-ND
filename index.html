@@ -57,11 +57,15 @@
             <ins class="adsbygoogle" data-ad-client="ca-pub-7712491125096856" data-ad-format="auto"
                 data-ad-slot="6317925864" data-full-width-responsive="true"
                 style="display:block; margin:10px auto; max-width:100%;"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
         </div>
     </div>
+
+
+    
+
+
+
+
     <!-- Hero Section -->
     <section class="hero" id="inicio">
         <div class="container">
@@ -316,9 +320,6 @@
                         <ins class="adsbygoogle" data-ad-client="ca-pub-7712491125096856" data-ad-format="auto"
                             data-ad-slot="9862403292" data-full-width-responsive="true"
                             style="display:block; margin:10px auto; max-width:100%;"></ins>
-                        <script>
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
                     </div>
                 </div>
                 <!-- Popular Posts -->
@@ -364,9 +365,6 @@
                         <ins class="adsbygoogle" data-ad-client="ca-pub-7712491125096856" data-ad-format="auto"
                             data-ad-slot="3275586289" data-full-width-responsive="true"
                             style="display:block; margin:10px auto; max-width:100%;"></ins>
-                        <script>
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
                     </div>
                 </div>
                 <!-- Popular Posts -->
@@ -389,6 +387,8 @@
                 </div>
             </div>
         </aside>
+
+        
     </div>
     <!-- Footer -->
     <footer class="footer">
@@ -438,6 +438,7 @@
             </div>
         </div>
     </footer>
+    
     <script>
         // Mobile menu toggle
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
@@ -483,6 +484,33 @@
             });
         });
     </script>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const ads = document.querySelectorAll(".adsbygoogle");
+
+    if ("IntersectionObserver" in window) {
+        let observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    try {
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                        observer.unobserve(entry.target);
+                    } catch (e) {
+                        console.log("Erro carregando anúncio:", e);
+                    }
+                }
+            });
+        }, { rootMargin: "100px" });
+
+        ads.forEach(ad => observer.observe(ad));
+    } else {
+        // Fallback caso o navegador não suporte IntersectionObserver
+        ads.forEach(ad => (adsbygoogle = window.adsbygoogle || []).push({}));
+    }
+});
+</script>
+    
 </body>
 
 </html>
