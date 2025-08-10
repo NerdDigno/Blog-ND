@@ -54,14 +54,15 @@
     <div class="ad-banner-top">
         <div class="ad-placeholder">
             <!-- banner top -->
-            <ins class="adsbygoogle" data-ad-client="ca-pub-7712491125096856" data-ad-format="auto"
-                data-ad-slot="6317925864" data-full-width-responsive="true"
-                style="display:block; margin:10px auto; max-width:100%;"></ins>
+            <ins class="adsbygoogle" data-ad-client="ca-pub-7712491125096856" data-ad-slot="6317925864"
+                data-ad-format="auto" data-full-width-responsive="true"
+                style="display:block; width:100%; height:90px; margin:10px auto;">
+            </ins>
         </div>
     </div>
 
 
-    
+
 
 
 
@@ -388,7 +389,7 @@
             </div>
         </aside>
 
-        
+
     </div>
     <!-- Footer -->
     <footer class="footer">
@@ -438,7 +439,7 @@
             </div>
         </div>
     </footer>
-    
+
     <script>
         // Mobile menu toggle
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
@@ -486,31 +487,31 @@
     </script>
 
     <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const ads = document.querySelectorAll(".adsbygoogle");
+        document.addEventListener("DOMContentLoaded", function () {
+            const ads = document.querySelectorAll(".adsbygoogle");
 
-    if ("IntersectionObserver" in window) {
-        let observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    try {
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                        observer.unobserve(entry.target);
-                    } catch (e) {
-                        console.log("Erro carregando anúncio:", e);
-                    }
-                }
-            });
-        }, { rootMargin: "100px" });
+            if ("IntersectionObserver" in window) {
+                let observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            try {
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                                observer.unobserve(entry.target);
+                            } catch (e) {
+                                console.log("Erro carregando anúncio:", e);
+                            }
+                        }
+                    });
+                }, { rootMargin: "100px" });
 
-        ads.forEach(ad => observer.observe(ad));
-    } else {
-        // Fallback caso o navegador não suporte IntersectionObserver
-        ads.forEach(ad => (adsbygoogle = window.adsbygoogle || []).push({}));
-    }
-});
-</script>
-    
+                ads.forEach(ad => observer.observe(ad));
+            } else {
+                // Fallback caso o navegador não suporte IntersectionObserver
+                ads.forEach(ad => (adsbygoogle = window.adsbygoogle || []).push({}));
+            }
+        });
+    </script>
+
 </body>
 
 </html>
