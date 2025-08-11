@@ -140,12 +140,13 @@ body {
     border: 2px dashed #555;
     font-size: 0.9rem;
     text-align: center;
-    max-width: 728px;
+    max-width: 828px;
     margin: 0 auto;
-    height: 90px;
+    height: 190px;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .ad-placeholder.vertical {
