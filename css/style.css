@@ -161,6 +161,20 @@ body {
   height: 600px;
 }
 
+/* Ajuste responsivo para mobile */
+@media (max-width: 768px) {
+  .ad-placeholder {
+    width: 100%;       /* Ocupa toda a largura disponível */
+    height: auto;      /* Altura automática para manter proporção */
+    min-height: 250px; /* Altura mínima para quadrado */
+  }
+
+  .ad-placeholder.vertical {
+    width: 100%;       /* Largura total */
+    height: auto;
+    min-height: 300px; /* Pode diminuir a altura no mobile para caber */
+  }
+}
 
 
 .ad-banner-top {
