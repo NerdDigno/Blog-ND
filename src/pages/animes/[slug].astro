@@ -1,0 +1,14 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getEntryBySlug } from "astro:content";
+
+const { slug } = Astro.params;
+const post = await getEntryBySlug("posts", slug);
+---
+<BaseLayout title={post.data.title}>
+  <article>
+    <h1>{post.data.title}</h1>
+    <img src={post.data.image} />
+    <div innerHTML={post.body} />
+  </article>
+</BaseLayout>
