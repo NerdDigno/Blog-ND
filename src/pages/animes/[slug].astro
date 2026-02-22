@@ -2,7 +2,6 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 
-/* 🔹 Diz ao Astro quais páginas ele deve gerar */
 export async function getStaticPaths() {
   const posts = await getCollection("posts");
 
@@ -14,7 +13,6 @@ export async function getStaticPaths() {
     }));
 }
 
-/* 🔹 Recebe o post correto */
 const { post } = Astro.props;
 ---
 <BaseLayout title={post.data.title}>
