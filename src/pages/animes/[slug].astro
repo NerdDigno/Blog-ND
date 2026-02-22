@@ -1,14 +1,26 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { getEntryBySlug } from "astro:content";
+import { getCollection } from "astro:content";
 
-const { slug } = Astro.params;
-const post = await getEntryBySlug("posts", slug);
+/* 🔹 Diz ao Astro quais páginas ele deve gerar */
+export async function getStaticPaths() {
+  const posts = await getCollection("posts");
+
+  return posts
+    .filter(post => post.data.category === "animes")
+    .map(post => ({
+      params: { slug: post.slug },
+      props: { post },
+    }));
+}
+
+/* 🔹 Recebe o post correto */
+const { post } = Astro.props;
 ---
 <BaseLayout title={post.data.title}>
   <article>
     <h1>{post.data.title}</h1>
-    <img src={post.data.image} />
+    <img src={post.data.image} alt={post.data.title} />
     <div innerHTML={post.body} />
   </article>
 </BaseLayout>
