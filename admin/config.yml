@@ -1,0 +1,12 @@
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "src/content/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Resumo", name: "description", widget: "text" }
+      - { label: "Categoria", name: "category", widget: "select", options: ["animes", "games", "filmes"] }
+      - { label: "Imagem", name: "image", widget: "image" }
+      - { label: "Conteúdo", name: "body", widget: "markdown" }
