@@ -2,8 +2,8 @@
   "name": "nerd-digno",
   "type": "module",
   "scripts": {
-  "build": "npx astro build"
-},
+    "build": "node ./node_modules/astro/astro.js build"
+  },
   "dependencies": {
     "astro": "^4.0.0"
   }
