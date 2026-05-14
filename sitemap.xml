@@ -11,18 +11,64 @@
   <url>
     <loc>https://www.nerddigno.com.br/animes.html</loc>
   </url>
+         <url>
+            <loc>https://www.nerddigno.com.br/posts_animes/attack-on-titan-o-final-foi-mal-nterpretado</loc>
+          </url>
+          <url>
+            <loc>https://www.nerddigno.com.br/posts_animes/demon-slayer</loc>
+          </url>
+          <url>
+            <loc>https://www.nerddigno.com.br/posts_animes/one-piece</loc>
+          </url>
+          <url>
+            <loc>https://www.nerddigno.com.br/posts_animes/solo-leveling</loc>
+          </url>
+
   <url>
     <loc>https://www.nerddigno.com.br/games.html</loc>
   </url>
+        <url>
+          <loc>https://www.nerddigno.com.br/posts_games/gta6</loc>
+        </url>
+        <url>
+          <loc>https://www.nerddigno.com.br/posts_games/elden-ring</loc>
+        </url>
+
   <url>
     <loc>https://www.nerddigno.com.br/filmes.html</loc>
   </url>
+        <url>
+          <loc>https://www.nerddigno.com.br/posts_filmes/anakin-skywalker-e-darthvader</loc>
+        </url>
+        <url>
+          <loc>https://www.nerddigno.com.br/posts_filmes/4-fantastico</loc>
+        </url>
+        <url>
+          <loc>https://www.nerddigno.com.br/posts_filmes/blade</loc>
+        </url>
+
   <url>
     <loc>https://www.nerddigno.com.br/series.html</loc>
-  </url>
+  </url>      
+        <url>
+          <loc>https://www.nerddigno.com.br/posts_series/from</loc>
+        </url>
+        <url>
+          <loc>https://www.nerddigno.com.br/posts_series/lost-misterios-da-ilha-explicados</loc>
+        </url>
+        <url>
+          <loc>https://www.nerddigno.com.br/posts_series/dark-o-final-explicado</loc>
+        </url>
+
   <url>
     <loc>https://www.nerddigno.com.br/mangas.html</loc>
-  </url>
+  </url>      
+        <url>
+          <loc>https://www.nerddigno.com.br/posts_mangas/top5-mangas</loc>
+        </url>
+        <url>
+          <loc>https://www.nerddigno.com.br/posts_mangas/kagurabachi</loc>
+        </url>
 
   <url>
     <loc>https://www.nerddigno.com.br/contato.html</loc>
