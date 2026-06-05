@@ -4,12 +4,8 @@
   <url>
     <loc>https://www.nerddigno.com.br/</loc>
   </url>
-
   <url>
-    <loc>https://www.nerddigno.com.br/index.html</loc>
-  </url>
-  <url>
-    <loc>https://www.nerddigno.com.br/animes.html</loc>
+    <loc>https://www.nerddigno.com.br/animes</loc>
   </url>
          <url>
             <loc>https://www.nerddigno.com.br/posts_animes/10-animes-parecidos-com-solo-leveling-para-assistir-agora</loc>
@@ -28,7 +24,7 @@
           </url>
 
   <url>
-    <loc>https://www.nerddigno.com.br/games.html</loc>
+    <loc>https://www.nerddigno.com.br/games</loc>
   </url>
         <url>
           <loc>https://www.nerddigno.com.br/posts_games/gta6</loc>
@@ -38,8 +34,11 @@
         </url>
 
   <url>
-    <loc>https://www.nerddigno.com.br/filmes.html</loc>
+    <loc>https://www.nerddigno.com.br/filmes</loc>
   </url>
+        <url>
+          <loc>https://www.nerddigno.com.br/posts_filmes/michael-jackson-filme-polemico</loc>
+        </url>
         <url>
           <loc>https://www.nerddigno.com.br/posts_filmes/anakin-skywalker-e-darthvader</loc>
         </url>
@@ -51,7 +50,7 @@
         </url>
 
   <url>
-    <loc>https://www.nerddigno.com.br/series.html</loc>
+    <loc>https://www.nerddigno.com.br/series</loc>
   </url>      
         <url>
           <loc>https://www.nerddigno.com.br/posts_series/from</loc>
@@ -64,7 +63,7 @@
         </url>
 
   <url>
-    <loc>https://www.nerddigno.com.br/mangas.html</loc>
+    <loc>https://www.nerddigno.com.br/mangas</loc>
   </url>      
         <url>
           <loc>https://www.nerddigno.com.br/posts_mangas/top5-mangas</loc>
